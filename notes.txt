@@ -1,1 +1,3 @@
-build\Release\CGHomework.exe> Results\image.ppm		->  save image
+﻿build\Release\CGHomework.exe> Results\image.ppm		->  save image
+
+Се исфрла зрак од камерата до секој пиксел
