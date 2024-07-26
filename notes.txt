@@ -1,0 +1,1 @@
+build\Release\CGHomework.exe> Results\image.ppm		->  save image
