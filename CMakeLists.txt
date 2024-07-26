@@ -12,7 +12,7 @@ endif()
 project ("CGHomework")
 
 # Add source to this project's executable.
-add_executable (CGHomework "src/InOneWeekend/main.cpp" "CGHomework.h" "src/InOneWeekend/vec3.h" "src/InOneWeekend/color.h" "src/InOneWeekend/interval.h")
+add_executable (CGHomework "src/InOneWeekend/main.cpp" "CGHomework.h" "src/InOneWeekend/vec3.h" "src/InOneWeekend/color.h" "src/InOneWeekend/interval.h" "src/InOneWeekend/ray.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET CGHomework PROPERTY CXX_STANDARD 20)

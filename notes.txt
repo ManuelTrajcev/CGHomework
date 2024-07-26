@@ -1,3 +1,10 @@
-﻿build\Release\CGHomework.exe> Results\image.ppm		->  save image
+﻿.\build\Debug\CGHomework.exe > Results\image.ppm		->  save image
 
-Се исфрла зрак од камерата до секој пиксел
+
+Ray = P(t) = A + tB 
+t - ray parameter (double) (оддалеченост од A),  A - ray origin (t=0), b - ray direction
+
+
+1. Calculate the ray from the “eye” through the pixel,
+2. Determine which objects the ray intersects, and
+3. Compute a color for the closest intersection point.

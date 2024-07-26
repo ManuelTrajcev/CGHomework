@@ -326,6 +326,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClCompile Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\main.cpp" />
     <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\CGHomework.h" />
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\vec3.h" />
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\color.h" />
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\interval.h" />
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\ray.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\build\ZERO_CHECK.vcxproj">
