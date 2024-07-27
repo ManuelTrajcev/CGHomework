@@ -17,3 +17,6 @@ Hit Spahere and Shadding
 	x - min, y - min -> blue
 	x - min, y - min -> blue
 	x - max, y - max -> brigtes (white)
+
+
+Multiple spheres - важна е само таа најблиску до камерата (smalleset t-value)
