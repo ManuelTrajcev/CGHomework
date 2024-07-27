@@ -1,4 +1,5 @@
-﻿.\build\Debug\CGHomework.exe > Results\image.ppm		->  save image
+﻿cmake --build build
+.\build\Debug\CGHomework.exe > Results\image.ppm		->  save image
 
 
 Ray = P(t) = A + tB 
