@@ -20,3 +20,6 @@ Hit Spahere and Shadding
 
 
 Multiple spheres - важна е само таа најблиску до камерата (smalleset t-value)
+Зракот оде до секој пиксе, според нормалата на зракот со пикселот кој го удира се определува бојата
+
+Intervall class - real world intervasl, min and max
