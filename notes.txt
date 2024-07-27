@@ -9,3 +9,11 @@ t - ray parameter (double) (оддалеченост од A),  A - ray origin (t
 1. Calculate the ray from the “eye” through the pixel,
 2. Determine which objects the ray intersects, and
 3. Compute a color for the closest intersection point.
+
+Hit Spahere and Shadding
+	X,Y,Z axis
+	x - max, y - min -> red
+	x - min, y - max -> green
+	x - min, y - min -> blue
+	x - min, y - min -> blue
+	x - max, y - max -> brigtes (white)
