@@ -26,3 +26,11 @@ Intervall class - real world intervasl, min and max
 
 
 Antialiasing - no jaggies, avg color from 4 neighbours
+
+Diffuse material - reflect a ray in multiple random directions
+	Rejection method
+	1.Generate a random vector inside of the unit sphere
+	2.Normalize this vector
+	3.Invert the normalized vector if it falls onto the wrong hemisphere
+
+	100% reflection - white
