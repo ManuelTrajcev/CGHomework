@@ -8,17 +8,6 @@
 #ifndef VEC3_H
 #define VEC3_H
 
-//==============================================================================================
-// Originally written in 2016 by Peter Shirley <ptrshrl@gmail.com>
-//
-// To the extent possible under law, the author(s) have dedicated all copyright and related and
-// neighboring rights to this software to the public domain worldwide. This software is
-// distributed without any warranty.
-//
-// You should have received a copy (see file COPYING.txt) of the CC0 Public Domain Dedication
-// along with this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
-//==============================================================================================
-
 inline double random_double() {
     // Returns a random real in [0,1)
     static std::uniform_real_distribution<double> distribution(0.0, 1.0);
@@ -164,7 +153,7 @@ inline vec3 random_on_hemisphere(const vec3& normal) {
         return -on_unit_sphere;
 }
 
-inline vec3 reflect(const vec3& v, const vec3& n) {
+inline vec3 reflect(const vec3& v, const vec3& n) {     
     return v - 2 * dot(v, n) * n;
 }
 

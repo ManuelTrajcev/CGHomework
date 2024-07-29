@@ -33,7 +33,16 @@ Diffuse material - reflect a ray in multiple random directions
 	2.Normalize this vector
 	3.Invert the normalized vector if it falls onto the wrong hemisphere
 	100% reflection - white
+	50% reflection - avg
 	Acnee problem - caused by flaotin point nibmers - кога делото од поврпината која ја добира знакот е мнгоу мал (0.00000001)
 	Lambertian distribution - more realisitc, proportional to cos(ϕ) reflection, ϕ - the angle between the reflected ray and the surface normal
+	повеќето рефлектирани зраци се близу до нормалата
 		1.The shadows are more pronounced after the change
 		2.Both spheres are tinted blue from the sky after the change
+
+	Gamma correction 
+		increase to 70% reflection (комјутерот претпоставува дека сликата веќе има gamma corrrection и сликите изгледаат потемни, затоа 70% го земаме за средина)
+
+Material - abstract material class that encapsulates unique behavior
+	1.Produce a scattered ray (or say it absorbed the incident ray).
+	2.If scattered, say how much the ray should be attenuated.
