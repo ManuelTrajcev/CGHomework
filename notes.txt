@@ -50,3 +50,4 @@ Material - abstract material class that encapsulates unique behavior
 Dielectrics - material, when light hits them splits into a reflected ray and a refracted (transmitted) ray
 	Refracted ray bends
 	material's refractive index - amount that a refracted ray bends
+	Flipped image - refraction angle > 90degrees
