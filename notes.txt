@@ -56,3 +56,8 @@ Camera
 	Field of view - angle
 	lookfrom position, lookat position
 	roll - sideways tilt, camera up vector
+Focus 
+	focus distance - distance between the camera center and the plane where everything is in perfect focus
+	focal length - distance between the camera center and the image plane	
+	fd и fl може, но не секогаш се исти
+	lens - infinitely thin circular
