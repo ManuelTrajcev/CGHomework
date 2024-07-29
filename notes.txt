@@ -34,3 +34,5 @@ Diffuse material - reflect a ray in multiple random directions
 	3.Invert the normalized vector if it falls onto the wrong hemisphere
 
 	100% reflection - white
+
+	Acnee problem - caused by flaotin point nibmers - кога делото од поврпината која ја добира знакот е мнгоу мал (0.00000001)
