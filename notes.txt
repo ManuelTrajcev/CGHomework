@@ -51,3 +51,8 @@ Dielectrics - material, when light hits them splits into a reflected ray and a r
 	Refracted ray bends
 	material's refractive index - amount that a refracted ray bends
 	Flipped image - refraction angle > 90degrees
+
+Camera 
+	Field of view - angle
+	lookfrom position, lookat position
+	roll - sideways tilt, camera up vector
