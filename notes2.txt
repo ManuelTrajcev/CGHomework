@@ -1,0 +1,4 @@
+﻿BVH
+Perlin Texture 
+Motion Blur - brute forced (речиси сите ефекти се постигнуваат така), camera shoter reporodcution
+Ray + time variable - za eden frame ni e potreben interval [0,1]
