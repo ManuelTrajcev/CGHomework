@@ -18,3 +18,8 @@ Bounding Volume Hierarchies:
 	proveruvame dali ima interferencija so x0, y0, z0 oskite
 	aabb - bounding box
 BVH Node Class - kontejner za hittable objekti
+	najbitno - pravilno da se podelat objektite vo podgrupite
+	Podelba:
+		1.randomly choose an axis
+		2.sort the primitives (using std::sort)
+		3.put half in each subtree

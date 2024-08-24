@@ -23,6 +23,12 @@ inline double degrees_to_radians(double degrees) {
 	return degrees * pi / 180.0;
 }
 
+inline int random_int(int min, int max) {
+    // Returns a random integer in [min,max].
+    return int(random_double(min, max + 1));
+}
+
+
 
 // Common Headers
 
