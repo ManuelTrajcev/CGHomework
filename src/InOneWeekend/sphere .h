@@ -52,6 +52,7 @@ private:
     point3 center1;
     double radius;
     bool is_moving;
+    vec3 center_vec;
     shared_ptr<material> mat;
 
     point3 sphere_center(double time) const {

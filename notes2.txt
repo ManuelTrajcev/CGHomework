@@ -1,5 +1,18 @@
-﻿BVH
+﻿BVH - Bounding Volume Hierarchies
 Perlin Texture 
 Motion Blur - brute forced (речиси сите ефекти се постигнуваат така), camera shoter reporodcution
 Ray + time variable - za eden frame ni e potreben interval [0,1]
 Sphere - se dvizi od center1 do center2 vo interval [0,1]
+Scatter - move in a random dirrection
+
+Bounding Volume Hierarchies:
+	hittable refactoring
+	ray-object intersection - bottleneck
+	logarithmic search instead of binary search
+	Podreuvanje na objektite vo scena:
+		1) subdivide the space
+		2) subdivide the objects
+	Bounding sphere (gi sodrzi site objekti), ako zrakot ne ja pokoti --> ne pogodil ni eden objekt
+	Gorup the objects in subgroubs
+	Axis-Aligned Bounding Boxes (AABBs) - polesna podelba na prostorot na podgrupi
+	proveruvame dali ima interferencija so x0, y0, z0 oskite
