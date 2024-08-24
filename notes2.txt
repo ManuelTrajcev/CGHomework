@@ -28,3 +28,6 @@ Texture mapping:
 	texture - effect (color, shininess, bump geometry)
 	mapping - mathematical part
 	(u,v) coordinates
+
+	solid texture - colors all of the pixels in a given space
+	spatial texture - 
