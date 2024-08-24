@@ -16,3 +16,4 @@ Bounding Volume Hierarchies:
 	Gorup the objects in subgroubs
 	Axis-Aligned Bounding Boxes (AABBs) - polesna podelba na prostorot na podgrupi
 	proveruvame dali ima interferencija so x0, y0, z0 oskite
+	aabb - bounding box

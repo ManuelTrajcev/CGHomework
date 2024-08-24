@@ -3,18 +3,30 @@
 
 #include "hittable.h"
 #include "vec3.h"
+#include"rtweekend.h"
+#include"aabb.h"
 
 class sphere : public hittable {
 public:
     // stationary 
     sphere(const point3& center, double radius, shared_ptr<material> mat)
-        : center1(center), radius(std::fmax(0, radius)), mat(mat), is_moving(false) {}
+        : center1(center), radius(std::fmax(0, radius)), mat(mat), is_moving(false)
+    {
+        auto rvec = vec3(radius, radius, radius);
+        bbox = aabb(center1 - rvec, center1 + rvec);
+    }
+    aabb bounding_box() const override { return bbox; }
 
     // moving 
-    sphere(const point3& center1, const point3& center2, double radius,     //center1 -> center2 za vreme [0,1]
-        shared_ptr<material> mat)
-        : center1(center1), radius(std::fmax(0, radius)), mat(mat), is_moving(true)
+    sphere(const point3& center1, const point3& center2, double radius,
+           shared_ptr<material> mat)
+      : center1(center1), radius(std::fmax(0,radius)), mat(mat), is_moving(true)
     {
+        auto rvec = vec3(radius, radius, radius);
+        aabb box1(center1 - rvec, center1 + rvec);
+        aabb box2(center2 - rvec, center2 + rvec);
+        bbox = aabb(box1, box2);
+
         center_vec = center2 - center1;
     }
     bool hit(const ray& r, interval ray_t, hit_record& rec) const override {
@@ -48,12 +60,15 @@ public:
         return true;
     }
 
+    
+
 private:
     point3 center1;
     double radius;
     bool is_moving;
     vec3 center_vec;
     shared_ptr<material> mat;
+    aabb bbox;
 
     point3 sphere_center(double time) const {
         return center1 + time * center_vec; //center1 -> center2, linearno pomestuvanje za vreme na interval [0,1]
