@@ -23,3 +23,4 @@ BVH Node Class - kontejner za hittable objekti
 		1.randomly choose an axis
 		2.sort the primitives (using std::sort)
 		3.put half in each subtree
+	
