@@ -2,3 +2,4 @@
 Perlin Texture 
 Motion Blur - brute forced (речиси сите ефекти се постигнуваат така), camera shoter reporodcution
 Ray + time variable - za eden frame ni e potreben interval [0,1]
+Sphere - se dvizi od center1 do center2 vo interval [0,1]
