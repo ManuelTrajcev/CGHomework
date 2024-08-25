@@ -37,4 +37,5 @@ Texture mapping:
 		ϕ - the angle around the Y-axis (from -X to +Z to +X to -Z back to -X).
 		u=ϕ/2π
 		v=θ/π
-		
+	Texture Image Data:
+		image data -> 32-bit floats

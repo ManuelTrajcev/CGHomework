@@ -338,6 +338,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\aabb.h" />
     <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\bvh.h" />
     <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\texture.h" />
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\rtw_stb_image.h" />
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\external\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\build\ZERO_CHECK.vcxproj">
