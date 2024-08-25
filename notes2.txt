@@ -31,3 +31,10 @@ Texture mapping:
 
 	solid texture - colors all of the pixels in a given space
 	spatial texture - 
+
+	Sphericla coords:
+		(θ,ϕ) -  θ - the angle up from the bottom pole (that is, up from -Y)
+		ϕ - the angle around the Y-axis (from -X to +Z to +X to -Z back to -X).
+		u=ϕ/2π
+		v=θ/π
+		
