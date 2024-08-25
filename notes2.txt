@@ -39,3 +39,6 @@ Texture mapping:
 		v=θ/π
 	Texture Image Data:
 		image data -> 32-bit floats
+	
+Perlin Noise
+	- repeatable 
