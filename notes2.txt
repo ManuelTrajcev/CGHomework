@@ -44,3 +44,4 @@ Perlin Noise
 	- repeatable 
 	- smoothening
 	- Vector instead of floats - dot product, za da nema ekstremi (min and max)
+	- Turbulance -  sum of repeated calls to noise
