@@ -55,3 +55,5 @@ Quadrilaterals
 	Ex. Q=(0,0,0), u=(0,0,2), v=(0,1,0), 
 	Quads - flat - 0 thicknes -> numeric proble,s with ray intersection - SOLUTION - aabb always to have non zero
 	t = (D-n*P)/n*d - Point of intersection with the ray
+Lights
+	key component of ray tracing
