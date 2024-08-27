@@ -34,12 +34,29 @@ public:
             return false;
 
         auto intersection = r.at(t);
+        vec3 planar_hitpt_vector = intersection - Q;
+        auto alpha = dot(w, cross(planar_hitpt_vector, v));
+        auto beta = dot(w, cross(u, planar_hitpt_vector));
+
+        if (!is_interior(alpha, beta, rec))
+            return false;
+
 
         rec.t = t;
         rec.p = intersection;
         rec.mat = mat;
         rec.set_face_normal(r, normal);
 
+        return true;
+    }
+    virtual bool is_interior(double a, double b, hit_record& rec) const {
+        interval unit_interval = interval(0, 1);
+
+        if (!unit_interval.contains(a) || !unit_interval.contains(b))   //Outside the primitive
+            return false;
+
+        rec.u = a;
+        rec.v = b;
         return true;
     }
 
