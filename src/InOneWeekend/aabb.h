@@ -10,7 +10,8 @@ public:
     aabb() {}   //default interval e prazen
 
     aabb(const interval& x, const interval& y, const interval& z)
-        : x(x), y(y), z(z) {}
+        : x(x), y(y), z(z) {
+    }
 
     aabb(const point3& a, const point3& b)  // a & b - ekstremi
     {

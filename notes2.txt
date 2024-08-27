@@ -45,3 +45,12 @@ Perlin Noise
 	- smoothening
 	- Vector instead of floats - dot product, za da nema ekstremi (min and max)
 	- Turbulance -  sum of repeated calls to noise
+	- Sin(x)  - to make color more proportional in the turbulence	--> Marbel effect
+Quadrilaterals
+	- Paralelogram
+	Q1 - starting corner
+	u - vector, the first side, Q+u - adjacent corner
+	v - vector, the second side, Q+v - other adjacent corner
+	Q+u+v - opposite corner
+	Ex. Q=(0,0,0), u=(0,0,2), v=(0,1,0), 
+	Quads - flat - 0 thicknes -> numeric proble,s with ray intersection - SOLUTION - aabb always to have non zero
