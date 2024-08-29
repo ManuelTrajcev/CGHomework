@@ -57,3 +57,4 @@ Quadrilaterals
 	t = (D-n*P)/n*d - Point of intersection with the ray
 Lights
 	key component of ray tracing
+	instance - copy of a geometric primitive - hittable box
