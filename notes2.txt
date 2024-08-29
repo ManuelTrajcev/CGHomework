@@ -57,5 +57,14 @@ Quadrilaterals
 	t = (D-n*P)/n*d - Point of intersection with the ray
 Lights
 	key component of ray tracing
+Transformations
 	instance - copy of a geometric primitive - hittable box
 	trainslating the box - "+" opperator in interval/aabb classes
+	Translation intersections:
+		1.Move the ray backwards by the offset
+		2.Determine whether an intersection exists along the offset ray (and if so, where)
+		3.Move the intersection point forwards by the offset
+	Rotations - x,y,z - axis
+	Around z-axis:		//za x, x->z, za y, y->z
+		x′=cos(θ)⋅x−sin(θ)⋅y
+		y′=sin(θ)⋅x+cos(θ)⋅y
