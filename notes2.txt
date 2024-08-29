@@ -68,3 +68,8 @@ Transformations
 	Around z-axis:		//za x, x->z, za y, y->z
 		x′=cos(θ)⋅x−sin(θ)⋅y
 		y′=sin(θ)⋅x+cos(θ)⋅y
+Volumes:
+	volumes or participating media	- smoke, fog ...
+	Constant Density Mediums - ray can scatter or make it through it
+	probability=C⋅ΔL, C - optical density, L - distance
+	assume that once a ray exits the constant medium boundary, it will continue forever outside the boundary
