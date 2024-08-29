@@ -58,3 +58,4 @@ Quadrilaterals
 Lights
 	key component of ray tracing
 	instance - copy of a geometric primitive - hittable box
+	trainslating the box - "+" opperator in interval/aabb classes
