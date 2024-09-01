@@ -1,0 +1,11 @@
+﻿Radnomized algorithms:
+	Monte Carlo
+	Las Vegas
+Monte Carlo - correct result and frequently gets it wrong
+Las Vegas - always correct
+
+Las Vegas - multiple interations, always gets to correct
+Monte Carlo - fixed num of iterations, good estimation
+
+Pi estimation:
+	πr^2/(2r)^2=π/4
