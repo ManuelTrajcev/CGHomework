@@ -15,4 +15,27 @@ int main() {
 
     std::cout << std::fixed << std::setprecision(12);
     std::cout << "I = " << (b - a) * (sum / N) << '\n';
+
+    sum = 0;
+
+    //Sin5 
+    for (int i = 0; i < N; i++) {
+        auto x = random_double(a, b);
+        sum += std::pow(std::sin(x), 5.0);
+    }
+
+    std::cout << std::fixed << std::setprecision(12);
+    std::cout << "I = " << (b - a) * (sum / N) << '\n';
+
+    sum = 0;
+
+
+    //ln(sin)
+    for (int i = 0; i < N; i++) {
+        auto x = random_double(a, b);
+        sum += std::log(std::sin(x));
+    }
+
+    std::cout << std::fixed << std::setprecision(12);
+    std::cout << "I = " << (b - a) * (sum / N) << '\n';
 }
