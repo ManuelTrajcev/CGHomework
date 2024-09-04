@@ -1,4 +1,4 @@
-﻿#include "rtweekend.h"
+#include "rtweekend.h"
 #include <iostream>
 #include <iomanip>
 

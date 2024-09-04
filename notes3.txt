@@ -16,4 +16,27 @@ Stratification - sharper contrast at the edges of a plane (better effect on text
 
 One dimensional Monte Carlo
 
-area(circle)/area(square) = pi/4
+One Dimensional Monte Carlo Integration
+	area(circle)/area(square) = π/4
+	circumscribed square is 4r2	-> area(circle)=πr2
+	r = 1 -> areac(circle)= π
+	
+	1. X=(x0,x1,...,xN−1)
+	2. yi=f(xi)
+	3. Y=F(X)
+	4. Y=(y0,y1,...,yN−1)=(f(x0),f(x1),...,f(xN−1))
+	5. verage(Yi)=E[Y]=1N∑i=0N−1yi = 1N∑i=0N−1f(xi) = E[F(X)]
+	E[Y]	- Expected value of Y
+
+	E[f(x′)|a≤x′≤b]=limN→∞1N∑i=0N−1f(xi)	- Monte Carlo Algorithm - summing an infinite number of randim points
+	Sampling Random Points:
+		xi=a+iΔx
+		Δx=b−aN
+		E[f(x′)|a≤x′≤b]≈1N∑i=0N−1f(xi)∣∣xi=a+iΔx
+		E[f(x′)|a≤x′≤b]=limN→∞1b−a∑i=0N−1f(xi)Δx∣∣xi=a+iΔx
+		E[f(x′)|a≤x′≤b]=1b−a∫baf(x)dx
+		area(f(x),a,b)=∫baf(x)dx
+		E[f(x)|a≤x≤b]=1b−a⋅area(f(x),a,b)
+	
+	Solving Integral with Monte Carlo:
+		I=area(x2,0,2) or E[f(x)|a≤x≤b]=1b−a⋅area(f(x),a,b) -> I=2⋅average(x2,0,2)
