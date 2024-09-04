@@ -12,7 +12,7 @@ endif()
 project ("CGHomework")
 
 # Add source to this project's executable.
-add_executable (CGHomework "src/InOneWeekend/main.cpp" "CGHomework.h" "src/InOneWeekend/vec3.h"  "src/InOneWeekend/interval.h" "src/InOneWeekend/ray.h" "src/InOneWeekend/hittable.h" "src/InOneWeekend/sphere .h" "src/InOneWeekend/rtweekend.h" "src/InOneWeekend/hittable_list.h" "src/InOneWeekend/color.h" "src/InOneWeekend/material.h" "src/InOneWeekend/aabb.h" "src/InOneWeekend/bvh.h" "src/InOneWeekend/texture.h" "src/InOneWeekend/rtw_stb_image.h" "src/InOneWeekend/external/stb_image.h" "src/InOneWeekend/perlin.h" "src/InOneWeekend/constant_medium.h")
+add_executable (CGHomework "src/InOneWeekend/main.cpp" "CGHomework.h" "src/InOneWeekend/vec3.h"  "src/InOneWeekend/interval.h" "src/InOneWeekend/ray.h" "src/InOneWeekend/hittable.h" "src/InOneWeekend/sphere.h" "src/InOneWeekend/rtweekend.h" "src/InOneWeekend/hittable_list.h" "src/InOneWeekend/color.h" "src/InOneWeekend/material.h" "src/InOneWeekend/aabb.h" "src/InOneWeekend/bvh.h" "src/InOneWeekend/texture.h" "src/InOneWeekend/rtw_stb_image.h" "src/InOneWeekend/external/stb_image.h" "src/InOneWeekend/perlin.h" "src/InOneWeekend/constant_medium.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET CGHomework PROPERTY CXX_STANDARD 20)
