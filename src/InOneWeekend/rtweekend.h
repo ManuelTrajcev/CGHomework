@@ -5,7 +5,9 @@
 #include <iostream>
 #include <limits>
 #include <memory>
-
+#include <cstdlib> 
+#include <random> 
+#include "vec3.h"
 
 // C++ Std Usings
 
