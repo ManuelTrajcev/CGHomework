@@ -11,3 +11,9 @@ Pi estimation:
 	πr^2/(2r)^2=π/4
 
 Ray tracing - two new dimensions: ϕo & θo
+
+Stratification - sharper contrast at the edges of a plane (better effect on textures and reflective materials)
+
+One dimensional Monte Carlo
+
+area(circle)/area(square) = pi/4
