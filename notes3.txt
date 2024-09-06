@@ -84,3 +84,13 @@ One Dimensional Monte Carlo Integration
 
 	Any choice of PDF p  always converge to the right answer
 	The closer that p approximates f, the faster  it converges
+
+Monte Carlo - Sphere of Directions
+	the rejection method: random direction - random vector and rejcting it if outside of the sphere - repeat (book 1 and 2)
+	the inversion method: invert PDF
+		random point, mapping the unit sphere to Cartesian coordinates
+		f(θ,ϕ)=cos^2(θ)
+		PDF represents the relative probability of that direction - random_unit_vector()
+		f(θ,ϕ)=cos^2(θ)=dz^2	- θ angle with z-axis
+		4/3π=4.188790204786391
+ 
