@@ -93,4 +93,30 @@ Monte Carlo - Sphere of Directions
 		PDF represents the relative probability of that direction - random_unit_vector()
 		f(θ,ϕ)=cos^2(θ)=dz^2	- θ angle with z-axis
 		4/3π=4.188790204786391
- 
+
+Light Scattering
+	A - Albedo - form of fractional reflectance
+	probability of light beeing scattered: A
+	probability of light beeing absorbed: 1-A
+	energy wave length - E=hc/λ
+	
+	Scattering:
+		scattering PDF: pScatter()
+		incident direction:  pScatter(ωi,ωo)
+		mirror-like surface as viewing angle (incident angle) approaches grazing
+		x - math notation for the scattering position: x=(x,y,z)
+		The albedo of an object can also depend on the quantities: A(x,ωi,ωo,λ)
+		Coloro(x,ωo,λ)=∫ωiA(x,ωi,ωo,λ)⋅pScatter(x,ωi,ωo,λ)⋅Colori(x,ωi,λ)	- recursive algorithm (ray_color.h)
+	The Scattering PDF:
+		Coloro(x,ωo,λ)≈(∑A(…)⋅pScatter(…)⋅Colori(…)) / p(x,ωi,ωo,λ)
+		p(x,ωi,ωo,λ) - PDF of outgoing randomly generateed direction
+		pScatter(…) of a Lambertian surface is proportional to  cos(θo)
+
+		pScatter(x,ωi,ωo,λ)=C⋅cos(θo)
+		1=∫2πϕ=0∫π2θ=0C⋅cos(θ)dA
+		C=1π
+		Coloro(x,ωo,λ)≈∑A(…)⋅Colori(…) ->(turn attenuation * ray_color(scattered, depth-1, world);   //in ray_color()
+
+		Bidirectional Reflectance Distribution Function (BRDF):
+			BRDF(ωi,ωo,λ)=(A(x,ωi,ωo,λ)⋅pScatter(x,ωi,ωo,λ)) / cos(θo)
+			(for a Lambertian surface) -> BRDF=A/π -> scattering albedo
