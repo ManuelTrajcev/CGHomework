@@ -139,3 +139,6 @@ Generating Random Directions
 			 ϕ=2π⋅r1
 			 r2=∫θ0 b(θ′)dθ′
 			 cos(θ)=1−2r2
+
+		Uniform Sampling a Hemisphere
+			 f()/p()=cos3(θ)/12π
