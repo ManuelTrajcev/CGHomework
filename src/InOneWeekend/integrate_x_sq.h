@@ -3,7 +3,7 @@
 #include <iomanip>
 
 double icd(double d) {      //randomly samble values from the distribution
-    return std::sqrt(4.0 * d);
+    return 8.0 * std::pow(d, 1.0 / 3.0);
 }
 
 double pdf(double x) {
@@ -13,10 +13,10 @@ double pdf(double x) {
 int main() {
     int a = 0;
     int b = 2;
-    int N = 1000000;
+    int N = 1;
     auto sum = 0.0;
 
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < N; i++) {       //N = 1, one sample, always returns the same value
         auto z = random_double();
         if (z == 0.0)  // Ignore zero to avoid NaNs
             continue;

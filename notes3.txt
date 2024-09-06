@@ -75,3 +75,12 @@ One Dimensional Monte Carlo Integration
 
 			unform PDF - converge slower
 			linear PDF - converge faster
+			nonuniform PDF - importance sampling
+
+		Monte Carlo Ray Tracer review:
+			1, You have an integral of f(x) over some domain [a,b]
+			2. You pick a PDF p that is non-zero and non-negative over [a,b]	
+			3. You average a whole ton of f(r)p(r) where r is a random number with PDF p
+
+	Any choice of PDF p  always converge to the right answer
+	The closer that p approximates f, the faster  it converges
