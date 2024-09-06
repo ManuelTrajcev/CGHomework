@@ -142,3 +142,20 @@ Generating Random Directions
 
 		Uniform Sampling a Hemisphere
 			 f()/p()=cos3(θ)/12π
+
+Orthonormal Bases
+	Generalization of normals, instead of all aligned with z axis
+	Orthonormal basis (ONB) - three mutually orthogonal unit vectors
+	The camera and objects must be described in the same coordinate system
+	O - origin of the scene, x,y,z - Cartesian co (3,-2,7):
+		Location is O+3x−2y+7z
+	measure coordinates: 
+		O′ & (u,v,w) -> Location is O′+uu+vv+ww
+
+	Generating an Orthonormal Basis:
+		surface normal vector n
+		vector a that is of nonzero length and nonparallel with n
+		vectors s and t perpendicular to n
+			s=unit_vector(n×a)
+			t=n×s
+
