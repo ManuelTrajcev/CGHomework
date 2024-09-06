@@ -1,4 +1,4 @@
-#ifndef MATERIAL_H
+﻿#ifndef MATERIAL_H
 #define MATERIAL_H
 
 #include "rtweekend.h"
@@ -30,7 +30,7 @@ public:
 
 	bool scatter(const ray& r_in, const hit_record& rec, color& attenuation, ray& scattered)
 		const override {
-		auto scatter_direction = rec.normal + random_unit_vector();
+		auto scatter_direction = random_on_hemisphere(rec.normal);	//PDF scattering
 
 		if (scatter_direction.near_zero())      //ignore degenerate scatter direction
 			scatter_direction = rec.normal;
@@ -42,8 +42,7 @@ public:
 
 	double scattering_pdf(const ray& r_in, const hit_record& rec, const ray& scattered)
 		const override {
-		auto cos_theta = dot(rec.normal, unit_vector(scattered.direction()));
-		return cos_theta < 0 ? 0 : cos_theta / pi;
+		return 1 / (2 * pi);		//p(ωo)=1/2π
 	}
 private:
 	shared_ptr<texture> tex;
