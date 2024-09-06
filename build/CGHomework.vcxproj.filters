@@ -57,6 +57,12 @@
     <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\constant_medium.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\estimate_halfway.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\sphere_importance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\CMakeLists.txt" />

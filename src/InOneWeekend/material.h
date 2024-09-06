@@ -11,8 +11,12 @@ public:
 	virtual ~material() = default;
 	virtual color emitted(double u, double v, const point3& p) const {
 		return color(0, 0, 0);
+	}	
+	virtual double scattering_pdf(const ray& r_in, const hit_record& rec, const ray& scattered)	//samples some PDF and then normalizes
+		const {
+		return 0;
 	}
-	virtual bool scatter(
+	virtual bool scatter(		
 		const ray& r_in, const hit_record& rec, color& attenuation, ray& scattered
 	) const {
 		return false;
@@ -34,6 +38,12 @@ public:
 		scattered = ray(rec.p, scatter_direction, r_in.time());
 		attenuation = tex->value(rec.u, rec.v, rec.p);
 		return true;
+	}
+
+	double scattering_pdf(const ray& r_in, const hit_record& rec, const ray& scattered)
+		const override {
+		auto cos_theta = dot(rec.normal, unit_vector(scattered.direction()));
+		return cos_theta < 0 ? 0 : cos_theta / pi;
 	}
 private:
 	shared_ptr<texture> tex;

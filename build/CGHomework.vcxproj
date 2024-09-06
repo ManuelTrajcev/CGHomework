@@ -342,6 +342,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\external\stb_image.h" />
     <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\perlin.h" />
     <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\constant_medium.h" />
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\estimate_halfway.h" />
+    <ClInclude Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\src\InOneWeekend\sphere_importance.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\MANUEL\FINKI\SEMESTAR IV\KOMPJUTERSKA GRAFIKA\CGHomework\CGHomework\build\ZERO_CHECK.vcxproj">

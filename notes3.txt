@@ -120,3 +120,11 @@ Light Scattering
 		Bidirectional Reflectance Distribution Function (BRDF):
 			BRDF(ωi,ωo,λ)=(A(x,ωi,ωo,λ)⋅pScatter(x,ωi,ωo,λ)) / cos(θo)
 			(for a Lambertian surface) -> BRDF=A/π -> scattering albedo
+
+Importance Sampling
+	Goal - reduce noise
+	extra rays toward light sources -> less noisy picture
+	PDF pLight(ωo)
+	p(ωo)=12pSurface(ωo)+12pLight(ωo)
+	all PDFs eventually converge to the correct answer
+	Larger PDF where the product pScatter(x,ωi,ωo)⋅Colori(x,ωi) is largest --> Largest Colori(x,ωi)
