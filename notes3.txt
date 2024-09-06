@@ -70,3 +70,8 @@ One Dimensional Monte Carlo Integration
 			f(x)=e^(−x/2π)*sin2(x)
 			P(x)=area(p(x′),−∞,x)
 			ICD(d)=sqrt(4⋅random_double())
+			nonuniformity -> inaccurately brigh image
+			fix -> down-weight where we sample more frequently, and to up-weight where we sample less frequently
+
+			unform PDF - converge slower
+			linear PDF - converge faster
