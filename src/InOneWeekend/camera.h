@@ -137,13 +137,11 @@ private:
 			return color_from_emission;
 
 		double scattering_pdf = rec.mat->scattering_pdf(r, rec, scattered);
-		double pdf_value = scattering_pdf;
+		double pdf_value = 1 / (2 * pi);
 
 		color color_from_scatter =
 			(attenuation * scattering_pdf * ray_color(scattered, depth - 1, world)) / pdf_value;
 
-
-		color color_from_scatter = attenuation * ray_color(scattered, depth - 1, world);
 		return color_from_emission + color_from_scatter;
 	}
 
