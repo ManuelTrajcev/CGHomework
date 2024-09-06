@@ -1,8 +1,6 @@
-﻿#include "rtweekend.h"
+#include "rtweekend.h"
 #include <iostream>
 #include <iomanip>
-
-
 
 double f(const vec3& d) {
     auto cos_theta = d.z();

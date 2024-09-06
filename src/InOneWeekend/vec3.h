@@ -8,6 +8,8 @@
 #ifndef VEC3_H
 #define VEC3_H
 
+
+
 inline double random_double() {
     // Returns a random real in [0,1)
     static std::uniform_real_distribution<double> distribution(0.0, 1.0);
@@ -180,5 +182,21 @@ inline vec3 refract(const vec3& uv, const vec3& n, double etai_over_etat) {
         //    return p;
     //}
 //}
+
+
+
+inline vec3 random_cosine_direction() {     // random vectors weighted by this PDF
+    auto r1 = random_double();
+    auto r2 = random_double();
+
+    const double pi = 3.14159265358979323846;
+
+    auto phi = 2 * pi * r1;
+    auto x = std::cos(phi) * std::sqrt(r2);
+    auto y = std::sin(phi) * std::sqrt(r2);
+    auto z = std::sqrt(1 - r2);
+
+    return vec3(x, y, z);
+}
 
 #endif
