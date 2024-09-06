@@ -1,9 +1,8 @@
-﻿#include "rtweekend.h"
+#include "rtweekend.h"
 
 #include <iostream>
 #include <math.h>
 
-// plot random values around z-axis
 int main() {
     for (int i = 0; i < 200; i++) {
         auto r1 = random_double();

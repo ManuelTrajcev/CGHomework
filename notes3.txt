@@ -128,3 +128,14 @@ Importance Sampling
 	p(ωo)=12pSurface(ωo)+12pLight(ωo)
 	all PDFs eventually converge to the correct answer
 	Larger PDF where the product pScatter(x,ωi,ωo)⋅Colori(x,ωi) is largest --> Largest Colori(x,ωi)
+
+Generating Random Directions
+	Random Directions Relative to the Z Axis
+		inversion method: 
+			θ - angle from the normal
+			 p(ω)=f(θ) - distibution simetric around z-axis
+			 a(ϕ)=12π
+			 b(θ)=2πf(θ)sin(θ)
+			 ϕ=2π⋅r1
+			 r2=∫θ0 b(θ′)dθ′
+			 cos(θ)=1−2r2
