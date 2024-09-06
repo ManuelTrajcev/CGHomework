@@ -60,3 +60,13 @@ One Dimensional Monte Carlo Integration
 			Probability(r|x−Δx<r<x+Δx)=area(p(r),x−Δx,x+Δx)=P(x+Δx)−P(x−Δx)
 		10.0 * random_double() - [0,10]
 		p(r)=r2 - [1.8,2.0] - greater probability	-> fix - double f(double d) (in vec3.h)
+		Solve halfway:	- computational expensive - O(n^2)
+			1. Solve for halfway point of a PDF
+			2. Recurse into lower half, repeat step 1
+			3. Recurse into upper half, repeat step 1
+		Metropolis-Hastings Algorithm - better version - O(nlogn)
+		
+		Approximating Distributions:
+			f(x)=e^(−x/2π)*sin2(x)
+			P(x)=area(p(x′),−∞,x)
+			ICD(d)=sqrt(4⋅random_double())
