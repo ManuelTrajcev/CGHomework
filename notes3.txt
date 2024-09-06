@@ -40,3 +40,23 @@ One Dimensional Monte Carlo Integration
 	
 	Solving Integral with Monte Carlo:
 		I=area(x2,0,2) or E[f(x)|a≤x≤b]=1b−a⋅area(f(x),a,b) -> I=2⋅average(x2,0,2)
+	
+	Density Functions
+		ray_color - problem - Small light sources create too much noise, Light sources are only sampled if a ray scatters toward them
+		density function - continuous version of a histogram
+		discrete density function - normalizes the y-axis to a fraction or percentage of the total:
+			Density of Bin i = Number of items in Bin i / Number of items total
+			discrete -> density : Bin Density = (Fraction of trees between height H and H′) / (H−H′)
+			Probability a random tree is between H and H′=Bin Density⋅(H−H′)
+
+		PDF is continuous function that defines the likelihood of an arbitrary range of values - p(r) - linear func
+			r = 0 -> p(r) = 0
+			r = 2 -> p(r) = 2
+			PDF - probability func
+			area(p(r),0,2)=1
+			p(r) = C⋅r
+			C = 1/2
+			p(r)=r/2
+			Probability(r|x−Δx<r<x+Δx)=area(p(r),x−Δx,x+Δx)=P(x+Δx)−P(x−Δx)
+		10.0 * random_double() - [0,10]
+		p(r)=r2 - [1.8,2.0] - greater probability	-> fix - double f(double d) (in vec3.h)

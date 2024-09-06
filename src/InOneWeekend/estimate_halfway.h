@@ -1,4 +1,4 @@
-﻿#include "rtweekend.h"
+#include "rtweekend.h"
 #include <algorithm>
 #include <vector>
 #include <iostream>

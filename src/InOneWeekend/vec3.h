@@ -20,6 +20,14 @@ inline double random_double(double min, double max) {
     return min + (max - min) * random_double();
 }
 
+double f(double d)
+{
+    if (d <= 0.5)
+        return std::sqrt(2.0) * random_double();
+    else
+        return std::sqrt(2.0) + (2 - std::sqrt(2.0)) * random_double();
+}
+
 
 class vec3 {
 public:
