@@ -159,3 +159,9 @@ Orthonormal Bases
 			s=unit_vector(n×a)
 			t=n×s
 
+Sampling Lights Directly
+	PDF, p(ω) - light ray direction
+	A - surface area, PDF on the surface = 1/A
+	small area dω -> dω=dA⋅cos(θ) / distance2(p,q) -> p(ω)=distance2(p,q) / cos(θ)⋅A
+
+ 
