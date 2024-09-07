@@ -174,4 +174,9 @@ Mixture Densities
 		Should:
 		1. returning a random direction weighted by the internal PDF distribution
 		2. returning the corresponding PDF distribution value in that direction
- 
+
+	Mixture PDF Class:
+			inear mixtures of any PDFs:
+			pMixture()=w0p0()+w1p1()+w2p2()+…+wn−1pn−1()
+			1=w0+w1+w2+…+wn−1
+			Average: pMixture(ωo)=12pSurface(ωo)+12pLight(ωo)
