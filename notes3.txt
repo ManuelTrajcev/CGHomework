@@ -164,4 +164,14 @@ Sampling Lights Directly
 	A - surface area, PDF on the surface = 1/A
 	small area dω -> dω=dA⋅cos(θ) / distance2(p,q) -> p(ω)=distance2(p,q) / cos(θ)⋅A
 	noisy - light  two-sided and there is a small space between light and ceiling
+		fix -> emit light in only one direction
+
+Mixture Densities
+	PDF Class:
+		1/4π
+		1/2π
+		cos(θ)/π
+		Should:
+		1. returning a random direction weighted by the internal PDF distribution
+		2. returning the corresponding PDF distribution value in that direction
  
