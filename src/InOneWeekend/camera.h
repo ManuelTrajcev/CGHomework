@@ -131,7 +131,7 @@ private:
 
 		ray scattered;
 		color attenuation;
-		color color_from_emission = rec.mat->emitted(rec.u, rec.v, rec.p);
+		color color_from_emission = rec.mat->emitted(r, rec, rec.u, rec.v, rec.p);	//light noisines fix
 		double pdf_value;
 
 
