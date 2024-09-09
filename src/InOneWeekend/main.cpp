@@ -51,7 +51,7 @@ int main() {
 					auto fuzz = random_double(0, 0.5);
 					sphere_material = make_shared<metal>(albed, fuzz);
 					world.add(make_shared<sphere>(center, 0.2, sphere_material));
-				}
+				} 
 				else		//glass
 				{
 					sphere_material = make_shared<dielectric>(1.5);
