@@ -180,3 +180,11 @@ Mixture Densities
 			pMixture()=w0p0()+w1p1()+w2p2()+…+wn−1pn−1()
 			1=w0+w1+w2+…+wn−1
 			Average: pMixture(ωo)=12pSurface(ωo)+12pLight(ωo)
+PDF Clean up:
+	ray_color() (2 PDFs):
+		1. p0() related to the shape of the light
+		2. p1() related to the normal vector and type of surface
+
+	Diffuse Versus Specular:
+		one material - two differnet rays (ex. wood, specular+diffuse)
+
