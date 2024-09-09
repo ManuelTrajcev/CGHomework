@@ -188,3 +188,15 @@ PDF Clean up:
 	Diffuse Versus Specular:
 		one material - two differnet rays (ex. wood, specular+diffuse)
 
+	Sampling a Sphere:
+		ceiling noisiness - reducition with PDF of metal block
+		PDF for glass block
+		PDF for glass sphere:
+			point on the far side of the sphere
+			uniformly sample the side of the sphere that is visible from an arbitrary point (произволна точка)
+			cone axis - from the ray origin through the sphere center
+			r2=∫θ0 2πf(θ′)sin(θ′)dθ′
+			θmax - максимален агол (произволна точка и центар на кружницата (еден крак), втор крак произволна точка и точка на кружницата)
+			solid_angle=∫2π0∫θmax0sin(θ)=2π⋅(1−cos(θmax))
+			cos(θmax)=0
+			2π - area of a hemisphere
