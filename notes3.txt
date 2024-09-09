@@ -200,3 +200,10 @@ PDF Clean up:
 			solid_angle=∫2π0∫θmax0sin(θ)=2π⋅(1−cos(θmax))
 			cos(θmax)=0
 			2π - area of a hemisphere
+
+		PDF Functions for Hittable Lists:
+			create mixture density of their two distributions
+		Handling Surface Acne:
+			black specks in the image (because pixel_color = average(many many samples))
+			acne = NaN value for pixel
+			FIX - kill NaNs (if branch), replace NaN with 0
